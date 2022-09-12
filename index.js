@@ -7,7 +7,7 @@ const questions = [];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, generateMarkdown(data));
+    fs.writeFile(fileName, generateMarkdown(data), (err) => err ? console.error(err) : console.log('Information added'));
 }
 
 // TODO: Create a function to initialize app
@@ -62,7 +62,7 @@ function init() {
         }
       ])
       .then((response) => 
-        writeToFile(`${reponse.title}.md`, response)
+        writeToFile(`${response.title}.md`, response)
       );
 }
 

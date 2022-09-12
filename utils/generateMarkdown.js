@@ -100,7 +100,7 @@ function generateMarkdown(data) {
   ## Tests<br>
   ${data.tests}<br>
   ## Questions<br>
-  GitHub: [${data.gitName}](https://github.com/${data.gitName}/
+  GitHub: [${data.gitName}](https://github.com/${data.gitName}/)<br>
   Email: ${data.email}
 `;
 }
